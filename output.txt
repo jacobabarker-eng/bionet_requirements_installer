@@ -1,0 +1,255 @@
+Command failed: dpkg -l | grep -i docker
+'dpkg' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm -rf /var/lib/docker /etc/docker
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm /etc/apparmor.d/docker
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo groupdel docker
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm -rf /var/run/docker.sock
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm -rf /var/lib/containerd
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm -r ~/.docker
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo kubeadm reset
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni kube*
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get autoremove
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo rm -rf ~/.kube
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+jacob@PC1024:~/491/project_loader$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+=> nvm is already installed in /c/Users/jacob/.nvm, trying to update using git
+
+=> => Compressing and cleaning up git repository
+
+=> Profile not found. Tried ~/.bashrc, ~/.bash_profile, ~/.zprofile, ~/.zshrc, and ~/.profile.
+=> Create one of them and run this script again
+   OR
+=> Append the following lines to the correct file yourself:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+Command failed: export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+'export' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+none
+Command failed: nvm install 18
+'nvm' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: nvm alias default 18
+'nvm' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: node -v
+'node' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: npm -v
+'npm' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get update
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get install yarn
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get install --no-install-recommends yarn
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: yarn --version
+'yarn' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get update
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo apt-get install ca-certificates curl
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo install -m 0755 -d /etc/apt/keyrings
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: sudo chmod a+r /etc/apt/keyrings/docker.asc
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+Command failed: echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo $VERSION_CODENAME) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+The system cannot find the path specified.
+Command failed: sudo apt-get update
+'sudo' is not recognized as an internal or external command,
+operable program or batch file.
+jacob@PC1024:~/491/project_loader$ dpkg -l | grep -i docker
+ii  docker-buildx-plugin                 0.14.0-1~ubuntu.22.04~jammy             amd64        Docker Buildx cli plugin.
+jacob@PC1024:~/491/project_loader$ sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'docker-engine' is not installed, so not removed
+Package 'docker' is not installed, so not removed
+Package 'docker.io' is not installed, so not removed
+Package 'docker-ce-cli' is not installed, so not removed
+Package 'docker-ce' is not installed, so not removed
+Package 'docker-compose-plugin' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'docker-engine' is not installed, so not removed
+Package 'docker' is not installed, so not removed
+Package 'docker.io' is not installed, so not removed
+Package 'docker-ce' is not installed, so not removed
+Package 'docker-compose-plugin' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo rm -rf /var/lib/docker /etc/docker
+none
+Command failed: sudo rm /etc/apparmor.d/docker
+rm: cannot remove '/etc/apparmor.d/docker': No such file or directory
+Command failed: sudo groupdel docker
+groupdel: group 'docker' does not exist
+jacob@PC1024:~/491/project_loader$ sudo rm -rf /var/run/docker.sock
+none
+jacob@PC1024:~/491/project_loader$ sudo rm -rf /var/lib/containerd
+none
+Command failed: sudo rm -r ~/.docker
+rm: cannot remove '/home/jacob/.docker': No such file or directory
+Command failed: sudo kubeadm reset
+sudo: kubeadm: command not found
+jacob@PC1024:~/491/project_loader$ sudo apt-get purge kubeadm kubectl kubelet kubernetes-cni kube*
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'kubernetes-client' is not installed, so not removed
+Package 'kubecolor' is not installed, so not removed
+Package 'kubernetes' is not installed, so not removed
+Package 'kubernetes-split-yaml' is not installed, so not removed
+Package 'kubetail' is not installed, so not removed
+Package 'kube-openapi' is not installed, so not removed
+Package 'kubeadm' is not installed, so not removed
+Package 'kubectl' is not installed, so not removed
+Package 'kubelet' is not installed, so not removed
+Package 'kubernetes-cni' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo apt-get autoremove
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo rm -rf ~/.kube
+none
+jacob@PC1024:~/491/project_loader$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+=> nvm is already installed in /home/jacob/.nvm, trying to update using git
+
+=> => Compressing and cleaning up git repository
+
+=> nvm source string already in /home/jacob/.bashrc
+=> bash_completion source string already in /home/jacob/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+jacob@PC1024:~/491/project_loader$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+none
+jacob@PC1024:~/491/project_loader$ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+none
+Command failed: nvm install 18
+/bin/sh: 1: nvm: not found
+Command failed: nvm alias default 18
+/bin/sh: 1: nvm: not found
+jacob@PC1024:~/491/project_loader$ node -v
+v18.20.3
+jacob@PC1024:~/491/project_loader$ npm -v
+10.7.0
+jacob@PC1024:~/491/project_loader$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+OK
+jacob@PC1024:~/491/project_loader$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+deb https://dl.yarnpkg.com/debian/ stable main
+jacob@PC1024:~/491/project_loader$ sudo apt-get update
+Hit:1 https://dl.yarnpkg.com/debian stable InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Hit:3 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:4 https://download.docker.com/linux/ubuntu jammy InRelease
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Hit:7 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:5 https://prod-cdn.packages.k8s.io/repositories/isv:/kubernetes:/core:/stable:/v1.30/deb  InRelease
+Fetched 229 kB in 1s (175 kB/s)
+Reading package lists...
+jacob@PC1024:~/491/project_loader$ sudo apt-get install yarn
+Reading package lists...
+Building dependency tree...
+Reading state information...
+yarn is already the newest version (1.22.22-1).
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo apt-get install --no-install-recommends yarn
+Reading package lists...
+Building dependency tree...
+Reading state information...
+yarn is already the newest version (1.22.22-1).
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ yarn --version
+1.22.22
+jacob@PC1024:~/491/project_loader$ sudo apt-get update
+Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:3 https://download.docker.com/linux/ubuntu jammy InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:5 https://dl.yarnpkg.com/debian stable InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:6 https://prod-cdn.packages.k8s.io/repositories/isv:/kubernetes:/core:/stable:/v1.30/deb  InRelease
+Reading package lists...
+jacob@PC1024:~/491/project_loader$ sudo apt-get install ca-certificates curl
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20230311ubuntu0.22.04.1).
+curl is already the newest version (7.81.0-1ubuntu1.16).
+0 upgraded, 0 newly installed, 0 to remove and 39 not upgraded.
+jacob@PC1024:~/491/project_loader$ sudo install -m 0755 -d /etc/apt/keyrings
+none
+jacob@PC1024:~/491/project_loader$ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+none
+jacob@PC1024:~/491/project_loader$ sudo chmod a+r /etc/apt/keyrings/docker.asc
+none
+jacob@PC1024:~/491/project_loader$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo $VERSION_CODENAME) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+none
+jacob@PC1024:~/491/project_loader$ sudo apt-get update
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:3 https://download.docker.com/linux/ubuntu jammy InRelease
+Hit:4 https://dl.yarnpkg.com/debian stable InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:7 https://prod-cdn.packages.k8s.io/repositories/isv:/kubernetes:/core:/stable:/v1.30/deb  InRelease
+Reading package lists...

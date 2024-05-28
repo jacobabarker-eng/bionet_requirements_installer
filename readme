@@ -1,0 +1,46 @@
+start with: systemctl --user start docker-desktop
+
+sudo kubeadm reset - manual
+
+just keep typing y if program stops
+
+https://desktop.docker.com/win/main/amd64/110738/Docker%20Desktop%20Installer.exe
+
+https://github.com/docker/docs/blob/3c3bbd3abfe3918dc02c08107fb27fc797265010/desktop/install/ubuntu.md
+https://desktop.docker.com/linux/main/amd64/docker-desktop-4.20.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64
+
+
+step 1: install visual studio code
+step 2: install python extensions
+step 3: python3 run.py 
+step 4: boot up docker desktop
+step 5: start kub
+step 6: clone project repository
+step 6: build and run the project
+
+
+############################################################################################
+############################################################################################
+############################################################################################
+
+Windows:
+
+git bash:
+
+run scripts
+
+follow github
+
+############################################################################################
+############################################################################################
+############################################################################################
+
+Ubuntu:
+
+git bash:
+
+run scripts
+
+follow github
+
+
