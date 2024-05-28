@@ -1,0 +1,4 @@
+nvm install 18
+nvm alias default 18
+node -v
+npm -v

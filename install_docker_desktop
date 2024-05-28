@@ -1,0 +1,16 @@
+
+sudo apt install gnome-terminal
+
+sudo apt remove docker-desktop
+
+sudo rm -r $HOME/.docker/desktop
+sudo rm /usr/local/bin/com.docker.cli
+sudo apt purge docker-desktop
+
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.20.1-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64 -O docker-desktop-4.20.1-amd64.deb
+
+sudo apt-get update
+sudo apt-get install ./docker-desktop-4.20.1-amd64.deb
+
+
+# {% include desktop-linux-launch.md %}
